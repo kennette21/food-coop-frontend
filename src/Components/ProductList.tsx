@@ -1,5 +1,18 @@
 import React from 'react';
 import ProductListItem, { ProductListItemProps } from './ProductListItem';
+import styled from 'styled-components';
+
+const List = styled.ul`
+    border: 2px solid black;
+    width: 600px;
+    margin: auto;
+`;
+
+const ListContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+`;
 
 class ProductList extends React.Component {
     render() {
@@ -21,9 +34,12 @@ class ProductList extends React.Component {
         ]
 
         return (
-            <ul>
-                {this.renderListItems(mockedListData)}
-            </ul>
+            <ListContainer>
+                <h2>Product List</h2>
+                <List>
+                    {this.renderListItems(mockedListData)}
+                </List>
+            </ListContainer>
         )
     }
 
