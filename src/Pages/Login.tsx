@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from '../Components/Header';
 import ProductList from '../Components/ProductList';
+import { RouteComponentProps } from '@reach/router';
 
-class Login extends React.Component {
+class Login extends React.Component<RouteComponentProps> {
     render() {
         return (
             <div className="login-container">
@@ -15,7 +16,6 @@ class Login extends React.Component {
                     <button>Submit</button>
                     <button>Go to Dashboard</button>
                 </div>
-                <ProductList/>
             </div>
         );
     }
