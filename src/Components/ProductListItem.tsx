@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { RouteComponentProps } from '@reach/router';
 
 const ItemContainer = styled.li`
     display: flex;
@@ -19,7 +20,7 @@ const Name = styled(BaseItemContent)`
     font-size: 16px;
 `;
 
-export type ProductListItemProps = {
+export interface ProductListItemProps extends RouteComponentProps {
     imageSrc: string;
     name: string;
     description: string;
