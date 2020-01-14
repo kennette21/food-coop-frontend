@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Components/Header';
 import ProductList from '../Components/ProductList';
+import ProducerList from '../Components/ProducerList';
 
 class Login extends React.Component {
     render() {
@@ -16,6 +17,7 @@ class Login extends React.Component {
                     <button>Go to Dashboard</button>
                 </div>
                 <ProductList/>
+                <ProducerList/>
             </div>
         );
     }
