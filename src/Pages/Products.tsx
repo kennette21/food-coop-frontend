@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Components/Header';
 import ProductList from '../Components/ProductList';
-import { RouteComponentProps } from '@reach/router';
+import { RouteComponentProps, Link } from '@reach/router';
 
 class Products extends React.Component<RouteComponentProps> {
     render() {
@@ -10,6 +10,7 @@ class Products extends React.Component<RouteComponentProps> {
                 <Header/>
                 <h3>This here is some Product Page ISH</h3>
                 <ProductList/>
+                <Link to="/cart">View Cart</Link>
             </div>
         );
     }
