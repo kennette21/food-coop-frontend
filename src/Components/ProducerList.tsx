@@ -9,11 +9,11 @@ import Table from 'react-bootstrap/Table'
 //     margin: auto;
 // `;
 
- const ListContainer = styled.div`
-     display: flex;
-     flex-direction: column;
-     margin: auto;
- `;
+const ListContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+`;
 
 class ProducerList extends React.Component {
     render() {
