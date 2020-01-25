@@ -14,10 +14,6 @@ import React from 'react';
 //     width: 100px;
 // `;
 
-// const Name = styled(BaseItemContent)`
-//     font-size: 16px;
-// `;
-
 export type ProducerListItemProps = {
     imageSrc: string;
     name: string;
@@ -41,19 +37,3 @@ class ProducerListItem extends React.Component<ProducerListItemProps, {}> {
 }
 
 export default ProducerListItem;
-
-// class ProducerListItem extends React.Component<ProducerListItemProps, {}> {
-//     render() {
-//         const {imageSrc, name, description, numProducts} = this.props;
-
-//         return (
-//             <ItemContainer className="product-list-item-container">
-//                 <img className="item-image" src={imageSrc} alt="text"/>
-//                 <Name className="item-name">{name}</Name>
-//                 <BaseItemContent className="item-description">{description}</BaseItemContent>
-//                 <BaseItemContent className="num-products">{numProducts}</BaseItemContent>
-//                 <button className="item-action-button"></button>
-//             </ItemContainer>
-//         )
-//     }
-// }
