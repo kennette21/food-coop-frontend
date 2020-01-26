@@ -1,12 +1,7 @@
 import React from 'react';
 import ProductListItem, { ProductListItemProps } from './ProductListItem';
 import styled from 'styled-components';
-
-const List = styled.ul`
-    border: 2px solid black;
-    width: 600px;
-    margin: auto;
-`;
+import Table from 'react-bootstrap/Table';
 
 const ListContainer = styled.div`
     display: flex;
@@ -20,14 +15,14 @@ class ProductList extends React.Component {
             {
                 imageSrc: "https://picsum.photos/200",
                 name: "Bunnies",
-                description: "",
+                description: "Test test test test test test test test test test test",
                 quantity: 1,
                 price: 1,
             },
             {
                 imageSrc: "https://picsum.photos/200",
                 name: "Apples",
-                description: "",
+                description: "Test test test test test test test test test",
                 quantity: 2,
                 price: 2,
             }
@@ -36,9 +31,20 @@ class ProductList extends React.Component {
         return (
             <ListContainer>
                 <h2>Product List</h2>
-                <List>
-                    {this.renderListItems(mockedListData)}
-                </List>
+                <Table striped hover>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderListItems(mockedListData)}
+                    </tbody>
+                </Table>
             </ListContainer>
         )
     }

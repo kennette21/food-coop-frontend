@@ -1,13 +1,7 @@
 import React from 'react';
 import ProducerListItem, { ProducerListItemProps } from './ProducerListItem';
 import styled from 'styled-components';
-import Table from 'react-bootstrap/Table'
-
-// const List = styled.ul`
-//     border: 2px solid black;
-//     width: 600px;
-//     margin: auto;
-// `;
+import Table from 'react-bootstrap/Table';
 
 const ListContainer = styled.div`
     display: flex;
@@ -35,7 +29,7 @@ class ProducerList extends React.Component {
         return (
             <ListContainer>
                 <h2>Producer List</h2>
-                <Table striped bordered hover variant="dark">
+                <Table striped hover variant="dark">
                     <thead>
                         <tr>
                             <th>Logo</th>

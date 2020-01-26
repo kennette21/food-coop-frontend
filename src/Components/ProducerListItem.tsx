@@ -1,18 +1,4 @@
 import React from 'react';
-//import styled from 'styled-components';
-//import ProducerList from './ProducerList';
-
-//  const ItemContainer = styled.td`
-//      justify-content: space-between;
-//      border-bottom: 2px solid gray;
-//  `;
-
-// const BaseItemContent = styled.div`
-//     border-right: 1px solid gray;
-//     display: flex;
-//     align-items: center;
-//     width: 100px;
-// `;
 
 export type ProducerListItemProps = {
     imageSrc: string;
