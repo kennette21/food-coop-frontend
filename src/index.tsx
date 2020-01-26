@@ -10,7 +10,7 @@ import Producers from './Pages/Producers';
 import ProducerDetail from './Pages/ProducerDetail';
 import Cart from './Pages/Cart';
 import { prependOnceListener } from 'cluster';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /***
  * Routing behind the whole thing

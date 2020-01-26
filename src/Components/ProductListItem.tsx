@@ -34,7 +34,7 @@ class ProductListItem extends React.Component<ProductListItemProps, {}> {
 
         return (
             <ItemContainer className="product-list-item-container">
-                <img className="item-image" src={imageSrc}/>
+                <img className="item-image" alt="product" src={imageSrc}/>
                 <Name className="item-name">{name}</Name>
                 <BaseItemContent className="item-description">{description}</BaseItemContent>
                 <BaseItemContent className="item-quantity">{quantity}</BaseItemContent>
